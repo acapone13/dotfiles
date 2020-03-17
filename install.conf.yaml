@@ -7,11 +7,10 @@
 
 - shell:
     -
-    command: mkdir ~/Projects; mkdir -p ~/.config/nvim 
+      command: mkdir ~/Projects; mkdir -p ~/.config/nvim 
     -	
-    command: sudo pacman -S --noconfirm snapd gdb cmake make vim neovim binutils  
-    stdout: true
-    stderr: true
-    description: "Installing initial packages"
-    -
-	
+      command: sudo pacman -S --noconfirm snapd gdb cmake make vim neovim binutils  
+      stdout: true
+      stderr: true
+      description: "Installing initial packages"
+    -	
