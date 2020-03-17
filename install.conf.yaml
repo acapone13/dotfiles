@@ -1,0 +1,17 @@
+- defaults:
+	link:
+		relink: true
+		force: true
+
+- clean: ['~']
+
+- shell:
+	-
+		command: mkdir ~/Projects; mkdir -p ~/.config/nvim 
+	-
+		command: sudo pacman -S --noconfirm snapd gdb cmake make vim neovim binutils  
+		stdout: true
+		stderr: true
+		description: "Installing initial packages"
+	-
+	
