@@ -9,8 +9,22 @@
     -
       command: mkdir ~/Projects; mkdir -p ~/.config/nvim 
     -	
-      command: sudo pacman -S --noconfirm snapd gdb cmake make vim neovim binutils  
+      command: sudo pacman -S --noconfirm snapd gdb cmake make vim neovim binutils tilix 
       stdout: true
       stderr: true
       description: "Installing initial packages"
-    -	
+    -
+
+- link:
+    ~/.dotfiles: ''
+
+    # emacs
+    ~/.emacs.d:
+    ~/.emacs:
+
+    # git
+    ~/.gitignore:
+
+    # vim
+    ~/.vim:
+    ~/.vimrc: 
